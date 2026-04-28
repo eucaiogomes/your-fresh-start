@@ -508,7 +508,7 @@ export const ToolsScroll = () => {
     <section
       id="ferramentas"
       ref={sectionRef}
-      className="relative bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_18%)_0%,_hsl(222_85%_10%)_55%,_hsl(222_90%_7%)_100%)] text-white"
+      className="relative bg-[hsl(222_85%_8%)] text-white"
       style={{ height: `calc(100vh + ${(totalSlides - 1) * slideHeightVh}vh)` }}
     >
       {/* Sticky stage */}
