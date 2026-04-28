@@ -116,7 +116,7 @@ const Counter = ({ to }: { to: number }) => {
 export const StatsAndPartner = () => (
   <section
     id="clientes"
-    className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_14%)_0%,_hsl(222_85%_8%)_55%,_hsl(222_90%_6%)_100%)] text-white py-16 lg:py-24"
+    className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_14%)_0%,_hsl(222_85%_8%)_55%,_hsl(222_90%_6%)_100%)] text-white py-12 sm:py-16 lg:py-24"
   >
     {/* Átomo orbital de fundo */}
     <div
@@ -158,7 +158,7 @@ export const StatsAndPartner = () => (
         <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70 ring-1 ring-white/10 backdrop-blur">
           Nossos números
         </span>
-        <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight md:text-4xl">
+        <h2 className="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl">
           Resultados que <span className="text-accent">falam por nós</span>
         </h2>
         <span className="mx-auto mt-5 block h-[3px] w-12 rounded-full bg-accent" />
@@ -223,7 +223,7 @@ export const StatsAndPartner = () => (
       <div className="relative mt-16 reveal">
         <div className="grid items-stretch gap-0 overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-20px_hsl(222_90%_3%/0.7)] lg:grid-cols-[1.15fr_1fr]">
           {/* ESQUERDA — Depoimento (claro) */}
-          <div className="relative overflow-hidden bg-white/95 p-10 backdrop-blur-xl lg:p-14">
+          <div className="relative overflow-hidden bg-white/95 p-6 backdrop-blur-xl sm:p-10 lg:p-14">
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">
@@ -271,7 +271,7 @@ export const StatsAndPartner = () => (
           </div>
 
           {/* DIREITA — Card visual azul */}
-          <div className="relative min-h-[440px] overflow-hidden bg-brand text-primary-foreground lg:min-h-[520px]">
+          <div className="relative min-h-[360px] overflow-hidden bg-brand text-primary-foreground sm:min-h-[440px] lg:min-h-[520px]">
             <div
               aria-hidden
               className="absolute inset-0 opacity-80"
@@ -281,7 +281,7 @@ export const StatsAndPartner = () => (
               }}
             />
 
-            <div className="relative z-10 flex h-full flex-col justify-between p-10 lg:p-12">
+            <div className="relative z-10 flex h-full flex-col justify-between p-6 sm:p-10 lg:p-12">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent-glow ring-1 ring-white/15 backdrop-blur">
                   <ShieldCheck className="h-3.5 w-3.5" /> Parceria estratégica
@@ -395,7 +395,7 @@ const SolutionsParallax = () => {
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Nossas soluções</span>
             <span className="h-[2px] w-10 bg-accent" />
           </div>
-          <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-5xl">
+          <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl">
             Soluções que <span className="text-accent">impulsionam</span> resultados reais
           </h2>
           <p className="mt-7 text-base font-medium text-white/85">
@@ -424,7 +424,7 @@ const SolutionsParallax = () => {
           onMouseLeave={() => setPaused(false)}
         >
           {/* viewport */}
-          <div className="relative h-[460px] overflow-hidden rounded-[32px] md:h-[500px]">
+          <div className="relative h-[520px] overflow-hidden rounded-[24px] sm:h-[460px] sm:rounded-[32px] md:h-[500px]">
             <div
               className="flex h-full w-full will-change-transform"
               style={{
@@ -437,7 +437,7 @@ const SolutionsParallax = () => {
                 const labelTop = title.replace("\n", " ").toUpperCase();
                 return (
                   <div key={title} className="h-full w-full shrink-0 basis-full">
-                    <article className="relative h-full overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] md:p-12">
+                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
                       {/* glow border top */}
                       <div
                         aria-hidden
@@ -449,32 +449,32 @@ const SolutionsParallax = () => {
                         className={`pointer-events-none absolute -left-20 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full ${a.halo} blur-3xl`}
                       />
 
-                      <div className="relative grid h-full grid-cols-[auto_1fr] items-center gap-8 md:gap-12">
+                      <div className="relative grid h-full grid-cols-1 items-center gap-6 sm:grid-cols-[auto_1fr] sm:gap-8 md:gap-12">
                         {/* Ícone — círculo sólido com anel escuro */}
-                        <div className="relative flex items-center justify-center">
+                        <div className="relative flex items-center justify-center sm:block">
                           <div
                             aria-hidden
                             className={`absolute inset-0 -m-4 rounded-full ${a.halo} blur-2xl`}
                           />
                           {/* anel externo escuro */}
-                          <div className="relative grid h-32 w-32 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10">
+                          <div className="relative grid h-24 w-24 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
                             {/* círculo laranja sólido */}
-                            <div className={`grid h-24 w-24 place-items-center rounded-full ${a.iconWrap}`}>
-                              <Icon className="h-11 w-11 text-white" />
+                            <div className={`grid h-[72px] w-[72px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
+                              <Icon className="h-9 w-9 text-white sm:h-11 sm:w-11" />
                             </div>
                           </div>
                         </div>
 
                         {/* texto */}
-                        <div className="border-l border-white/10 pl-8 md:pl-12">
+                        <div className="border-t border-white/10 pt-6 sm:border-l sm:border-t-0 sm:pl-8 sm:pt-0 md:pl-12">
                           <span className={`block text-[11px] font-bold uppercase tracking-[0.22em] ${accent === "orange" ? "text-accent" : "text-primary-glow"}`}>
                             {labelTop}
                           </span>
-                          <h3 className="mt-4 font-display text-3xl font-extrabold leading-tight text-white md:text-4xl">
+                          <h3 className="mt-3 font-display text-2xl font-extrabold leading-tight text-white sm:mt-4 sm:text-3xl md:text-4xl">
                             {desc.split(".")[0]}
                           </h3>
-                          <span className={`mt-5 block h-[3px] w-12 rounded-full ${a.rule}`} />
-                          <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/70 md:text-base">
+                          <span className={`mt-4 block h-[3px] w-12 rounded-full sm:mt-5 ${a.rule}`} />
+                          <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/70 sm:mt-5 md:text-base">
                             {desc}
                           </p>
                         </div>
