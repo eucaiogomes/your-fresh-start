@@ -663,7 +663,7 @@ const BlogUnified = () => {
               Conteúdos para você
             </span>
           </div>
-          <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-5xl">
+          <h2 className="mt-5 font-display text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl">
             Fique atualizado<br />
             com o que{" "}
             <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
