@@ -630,8 +630,8 @@ const ConsultorCta = () => {
               rows={4}
               className="resize-none rounded-xl border border-white/40 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/70 outline-none backdrop-blur transition focus:border-white focus:bg-white/15 focus:ring-2 focus:ring-white/40"
             />
-            <div className="mt-2 flex justify-end">
-              <Button type="submit" variant="brand" size="lg">
+            <div className="mt-2 flex justify-stretch sm:justify-end">
+              <Button type="submit" variant="brand" size="lg" className="w-full sm:w-auto">
                 Falar com Consultor <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
