@@ -457,10 +457,10 @@ const SolutionsParallax = () => {
                             className={`absolute inset-0 -m-4 rounded-full ${a.halo} blur-2xl`}
                           />
                           {/* anel externo escuro */}
-                          <div className="relative grid h-24 w-24 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
+                          <div className="relative grid h-20 w-20 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
                             {/* círculo laranja sólido */}
-                            <div className={`grid h-[72px] w-[72px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
-                              <Icon className="h-9 w-9 text-white sm:h-11 sm:w-11" />
+                            <div className={`grid h-[60px] w-[60px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
+                              <Icon className="h-7 w-7 text-white sm:h-11 sm:w-11" />
                             </div>
                           </div>
                         </div>
