@@ -420,7 +420,7 @@ const LectorAtom = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div
       ref={ref}
-      className="pointer-events-none absolute right-[-180px] top-1/2 h-[680px] w-[680px] opacity-90 will-change-transform"
+      className="pointer-events-none absolute right-[-220px] top-1/2 hidden h-[680px] w-[680px] opacity-90 will-change-transform sm:block lg:right-[-180px]"
       style={{ transform: "translateY(-50%) rotate(0deg)" }}
       aria-hidden
     >
@@ -530,7 +530,7 @@ export const ToolsScroll = () => {
 
         {/* Slides container */}
         <div className="container relative z-10 pb-16">
-          <div className="relative mx-auto min-h-[640px] max-w-6xl lg:min-h-[560px]">
+          <div className="relative mx-auto min-h-[560px] max-w-6xl sm:min-h-[640px] lg:min-h-[560px]">
             {/* Intro slide */}
             <div
               className="absolute inset-0 transition-all duration-500 ease-out"
@@ -541,7 +541,7 @@ export const ToolsScroll = () => {
               }}
             >
               <div className="flex h-full flex-col items-center justify-center text-center">
-                <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
+                <h2 className="font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl md:text-6xl">
                   Um único ambiente.{" "}
                   <span className="text-accent">Todas as ferramentas.</span>
                 </h2>
@@ -579,7 +579,7 @@ export const ToolsScroll = () => {
                         </span>
                         <span className="pr-2 text-sm font-semibold text-white">{tool.tag}</span>
                       </div>
-                      <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
+                      <h2 className="mt-6 font-display text-2xl font-extrabold leading-[1.1] tracking-tight sm:text-3xl md:text-5xl">
                         {tool.title}
                       </h2>
                       <span className="mt-5 block h-[3px] w-14 rounded-full bg-accent" />

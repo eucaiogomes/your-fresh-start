@@ -537,7 +537,7 @@ const ConsultorCta = () => {
         <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70 ring-1 ring-white/10 backdrop-blur">
           Fale com um consultor
         </span>
-        <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl text-balance">
+        <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl text-balance">
           Garanta o fluxo de{" "}
           <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
             informações
@@ -551,7 +551,7 @@ const ConsultorCta = () => {
 
       {/* Card laranja com gradiente */}
       <div
-        className="relative mt-12 overflow-hidden rounded-[2rem] p-8 shadow-[0_40px_80px_-20px_hsl(22_95%_25%/0.6)] md:p-12"
+        className="relative mt-12 overflow-hidden rounded-[1.5rem] p-6 shadow-[0_40px_80px_-20px_hsl(22_95%_25%/0.6)] sm:rounded-[2rem] sm:p-8 md:p-12"
         style={{
           backgroundImage:
             "linear-gradient(135deg, hsl(22 95% 55%) 0%, hsl(30 100% 62%) 55%, hsl(22 95% 48%) 100%)",
@@ -586,7 +586,7 @@ const ConsultorCta = () => {
               <MessageSquareText className="h-7 w-7" strokeWidth={2.4} />
             </div>
 
-            <h3 className="mt-7 font-display text-3xl font-extrabold leading-tight text-white md:text-4xl">
+            <h3 className="mt-7 font-display text-2xl font-extrabold leading-tight text-white sm:text-3xl md:text-4xl">
               Converse agora com um{" "}
               <span className="text-primary">consultor</span> e saiba mais!
             </h3>
@@ -630,8 +630,8 @@ const ConsultorCta = () => {
               rows={4}
               className="resize-none rounded-xl border border-white/40 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/70 outline-none backdrop-blur transition focus:border-white focus:bg-white/15 focus:ring-2 focus:ring-white/40"
             />
-            <div className="mt-2 flex justify-end">
-              <Button type="submit" variant="brand" size="lg">
+            <div className="mt-2 flex justify-stretch sm:justify-end">
+              <Button type="submit" variant="brand" size="lg" className="w-full sm:w-auto">
                 Falar com Consultor <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
@@ -663,7 +663,7 @@ const BlogUnified = () => {
               Conteúdos para você
             </span>
           </div>
-          <h2 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white md:text-5xl">
+          <h2 className="mt-5 font-display text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl">
             Fique atualizado<br />
             com o que{" "}
             <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
