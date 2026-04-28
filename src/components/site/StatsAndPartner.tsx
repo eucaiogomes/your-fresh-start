@@ -395,7 +395,7 @@ const SolutionsParallax = () => {
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Nossas soluções</span>
             <span className="h-[2px] w-10 bg-accent" />
           </div>
-          <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="mt-6 font-display text-[1.625rem] font-extrabold leading-[1.1] tracking-tight text-white text-balance break-words sm:text-4xl md:text-5xl">
             Soluções que <span className="text-accent">impulsionam</span> resultados reais
           </h2>
           <p className="mt-7 text-base font-medium text-white/85">
