@@ -271,7 +271,7 @@ export const StatsAndPartner = () => (
           </div>
 
           {/* DIREITA — Card visual azul */}
-          <div className="relative min-h-[440px] overflow-hidden bg-brand text-primary-foreground lg:min-h-[520px]">
+          <div className="relative min-h-[360px] overflow-hidden bg-brand text-primary-foreground sm:min-h-[440px] lg:min-h-[520px]">
             <div
               aria-hidden
               className="absolute inset-0 opacity-80"
