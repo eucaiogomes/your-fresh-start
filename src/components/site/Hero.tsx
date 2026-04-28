@@ -6,11 +6,11 @@ const clientLogos = ["SESI SENAI", "Sicredi", "Unimed", "GERDAU", "aché", "Alga
 export const Hero = () => {
   return (
     <section
-      className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_18%)_0%,_hsl(222_85%_10%)_55%,_hsl(222_90%_7%)_100%)] text-white pt-32 pb-24 lg:pt-40 lg:pb-32"
+      className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_18%)_0%,_hsl(222_85%_10%)_55%,_hsl(222_90%_7%)_100%)] text-white pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32"
     >
       {/* Átomo Lector centralizado atrás do título — estático, respiração sutil */}
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[780px] w-[780px] -translate-x-1/2 -translate-y-1/2 opacity-70"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 opacity-50 sm:h-[640px] sm:w-[640px] sm:opacity-60 lg:h-[780px] lg:w-[780px] lg:opacity-70"
         aria-hidden
       >
         <svg viewBox="0 0 600 600" className="h-full w-full animate-[spin_80s_linear_infinite]">
