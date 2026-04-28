@@ -541,7 +541,7 @@ export const ToolsScroll = () => {
               }}
             >
               <div className="flex h-full flex-col items-center justify-center text-center">
-                <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight md:text-6xl">
+                <h2 className="font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-4xl md:text-6xl">
                   Um único ambiente.{" "}
                   <span className="text-accent">Todas as ferramentas.</span>
                 </h2>
