@@ -62,9 +62,11 @@ export const Navbar = () => {
           ))}
         </nav>
 
-        <Button variant="hero" size="sm" asChild className="h-9 px-4 text-[13px]">
+        <Button variant="hero" size="sm" asChild className="h-9 px-3 text-[12px] sm:px-4 sm:text-[13px]">
           <a href="#cta">
-            Agendar demo <ArrowRight className="h-3.5 w-3.5" />
+            <span className="hidden xs:inline sm:inline">Agendar demo</span>
+            <span className="xs:hidden sm:hidden">Demo</span>
+            <ArrowRight className="h-3.5 w-3.5" />
           </a>
         </Button>
       </div>
