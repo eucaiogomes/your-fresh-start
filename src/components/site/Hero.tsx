@@ -46,19 +46,19 @@ export const Hero = () => {
 
       <div className="container relative z-10">
         <div className="mx-auto max-w-4xl text-center animate-fade-in">
-          <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-balance md:text-6xl lg:text-[4rem]">
+          <h1 className="font-display text-[2rem] font-extrabold leading-[1.08] tracking-tight text-balance sm:text-4xl md:text-6xl lg:text-[4rem]">
             A plataforma completa de Educação Corporativa que{" "}
             <span className="text-accent">transforma resultados.</span>
           </h1>
 
-          <span className="mx-auto mt-7 block h-[3px] w-16 rounded-full bg-accent" />
+          <span className="mx-auto mt-5 block h-[3px] w-12 rounded-full bg-accent sm:mt-7 sm:w-16" />
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/70 text-pretty md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-white/70 text-pretty sm:mt-7 sm:text-base md:text-lg">
             Integre pessoas, conteúdos e processos em um único ambiente e desenvolva talentos para o futuro.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            <Button variant="hero" size="lg" asChild>
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center">
+            <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
               <a href="#cta">
                 Agendar demonstração <ArrowRight className="h-4 w-4" />
               </a>
@@ -66,7 +66,7 @@ export const Hero = () => {
             <Button
               size="lg"
               asChild
-              className="bg-white/5 text-white ring-1 ring-white/15 backdrop-blur hover:bg-white/10"
+              className="w-full bg-white/5 text-white ring-1 ring-white/15 backdrop-blur hover:bg-white/10 sm:w-auto"
             >
               <a href="#video">
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-white/10">
@@ -77,13 +77,13 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <div className="mt-16">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+          <div className="mt-12 sm:mt-16">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/40 sm:text-xs sm:tracking-[0.2em]">
               Mais de 500 empresas já confiam na Lector
             </p>
-            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 opacity-70">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 opacity-70 sm:gap-x-8 sm:gap-y-3">
               {clientLogos.map((l) => (
-                <span key={l} className="font-display text-sm font-bold tracking-tight text-white/60">
+                <span key={l} className="font-display text-xs font-bold tracking-tight text-white/60 sm:text-sm">
                   {l}
                 </span>
               ))}
