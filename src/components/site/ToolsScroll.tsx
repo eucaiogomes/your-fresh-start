@@ -420,7 +420,7 @@ const LectorAtom = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div
       ref={ref}
-      className="pointer-events-none absolute right-[-180px] top-1/2 h-[680px] w-[680px] opacity-90 will-change-transform"
+      className="pointer-events-none absolute right-[-220px] top-1/2 hidden h-[680px] w-[680px] opacity-90 will-change-transform sm:block lg:right-[-180px]"
       style={{ transform: "translateY(-50%) rotate(0deg)" }}
       aria-hidden
     >
