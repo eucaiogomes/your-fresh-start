@@ -158,7 +158,7 @@ export const StatsAndPartner = () => (
         <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70 ring-1 ring-white/10 backdrop-blur">
           Nossos números
         </span>
-        <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight md:text-4xl">
+        <h2 className="mt-4 font-display text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl">
           Resultados que <span className="text-accent">falam por nós</span>
         </h2>
         <span className="mx-auto mt-5 block h-[3px] w-12 rounded-full bg-accent" />
