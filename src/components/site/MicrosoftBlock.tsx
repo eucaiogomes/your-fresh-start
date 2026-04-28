@@ -1,4 +1,5 @@
-import { Play, ArrowRight, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import microsoftLatamImg from "@/assets/microsoft-latam.jpg";
 
 const clients = [
   "Microsoft",
@@ -123,56 +124,37 @@ export const MicrosoftBlock = () => (
               </div>
             </div>
 
-            {/* DIREITA — Card visual */}
+            {/* DIREITA — Card visual com imagem de fundo */}
             <div className="relative z-10 min-h-[440px] overflow-hidden rounded-[2rem] border border-white/10 bg-brand text-primary-foreground shadow-[0_30px_60px_-20px_hsl(222_80%_10%/0.55)] lg:-mt-16 lg:min-h-[520px] lg:rounded-l-none lg:border-l-0">
-              {/* gradient mesh */}
+              {/* Imagem de fundo */}
+              <img
+                src={microsoftLatamImg}
+                alt="Lector é parceira Microsoft na América Latina"
+                width={1280}
+                height={1280}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              {/* Overlay escuro para legibilidade do texto */}
               <div
                 aria-hidden
-                className="absolute inset-0 opacity-80"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(circle at 80% 20%, hsl(222 90% 55% / 0.55), transparent 55%), radial-gradient(circle at 20% 90%, hsl(22 95% 55% / 0.35), transparent 50%)",
-                }}
+                className="absolute inset-0 bg-gradient-to-br from-brand/85 via-brand/70 to-brand/90"
               />
 
-
-              <div className="relative z-10 flex h-full flex-col justify-between p-10 lg:p-12">
-                <div>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent-glow ring-1 ring-white/15 backdrop-blur">
-                    <ShieldCheck className="h-3.5 w-3.5" /> Parceria estratégica
-                  </span>
-                  <h3 className="mt-5 font-display text-2xl font-bold leading-tight md:text-3xl text-balance">
-                    Lector é parceira{" "}
-                    <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
-                      Microsoft
-                    </span>{" "}
-                    na América Latina
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-primary-foreground/75 md:text-base">
-                    Tecnologia, escala e confiança para impulsionar o aprendizado corporativo.
-                  </p>
-                </div>
-
-                {/* CTA + play */}
-                <div className="mt-8 flex items-center justify-between gap-6">
-                  <button className="group inline-flex items-center gap-2 rounded-full bg-accent-gradient px-5 py-3 text-sm font-semibold text-white shadow-glow-accent transition-transform hover:scale-[1.03]">
-                    Ver cases
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                  </button>
-
-                  <button
-                    aria-label="Assistir vídeo"
-                    className="group grid h-16 w-16 place-items-center rounded-full bg-white/95 shadow-elevated transition-transform hover:scale-110"
-                  >
-                    <span className="grid h-11 w-11 place-items-center rounded-full bg-accent-gradient shadow-glow-accent">
-                      <Play className="h-4 w-4 fill-white text-white" />
-                    </span>
-                  </button>
-                </div>
-
-                <div className="mt-6 border-t border-white/15 pt-4 text-xs text-primary-foreground/70">
-                  Único parceiro Microsoft do segmento de educação na LATAM.
-                </div>
+              <div className="relative z-10 flex h-full flex-col justify-center p-10 lg:p-12">
+                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent-glow ring-1 ring-white/15 backdrop-blur">
+                  <ShieldCheck className="h-3.5 w-3.5" /> Parceria estratégica
+                </span>
+                <h3 className="mt-5 font-display text-2xl font-bold leading-tight md:text-3xl text-balance">
+                  Lector é parceira{" "}
+                  <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
+                    Microsoft
+                  </span>{" "}
+                  na América Latina
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80 md:text-base">
+                  Tecnologia, escala e confiança para impulsionar o aprendizado corporativo.
+                </p>
               </div>
             </div>
           </div>
