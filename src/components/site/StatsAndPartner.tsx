@@ -437,7 +437,7 @@ const SolutionsParallax = () => {
                 const labelTop = title.replace("\n", " ").toUpperCase();
                 return (
                   <div key={title} className="h-full w-full shrink-0 basis-full">
-                    <article className="relative h-full overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] md:p-12">
+                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
                       {/* glow border top */}
                       <div
                         aria-hidden
@@ -449,32 +449,32 @@ const SolutionsParallax = () => {
                         className={`pointer-events-none absolute -left-20 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full ${a.halo} blur-3xl`}
                       />
 
-                      <div className="relative grid h-full grid-cols-[auto_1fr] items-center gap-8 md:gap-12">
+                      <div className="relative grid h-full grid-cols-1 items-center gap-6 sm:grid-cols-[auto_1fr] sm:gap-8 md:gap-12">
                         {/* Ícone — círculo sólido com anel escuro */}
-                        <div className="relative flex items-center justify-center">
+                        <div className="relative flex items-center justify-center sm:block">
                           <div
                             aria-hidden
                             className={`absolute inset-0 -m-4 rounded-full ${a.halo} blur-2xl`}
                           />
                           {/* anel externo escuro */}
-                          <div className="relative grid h-32 w-32 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10">
+                          <div className="relative grid h-24 w-24 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
                             {/* círculo laranja sólido */}
-                            <div className={`grid h-24 w-24 place-items-center rounded-full ${a.iconWrap}`}>
-                              <Icon className="h-11 w-11 text-white" />
+                            <div className={`grid h-[72px] w-[72px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
+                              <Icon className="h-9 w-9 text-white sm:h-11 sm:w-11" />
                             </div>
                           </div>
                         </div>
 
                         {/* texto */}
-                        <div className="border-l border-white/10 pl-8 md:pl-12">
+                        <div className="border-t border-white/10 pt-6 sm:border-l sm:border-t-0 sm:pl-8 sm:pt-0 md:pl-12">
                           <span className={`block text-[11px] font-bold uppercase tracking-[0.22em] ${accent === "orange" ? "text-accent" : "text-primary-glow"}`}>
                             {labelTop}
                           </span>
-                          <h3 className="mt-4 font-display text-3xl font-extrabold leading-tight text-white md:text-4xl">
+                          <h3 className="mt-3 font-display text-2xl font-extrabold leading-tight text-white sm:mt-4 sm:text-3xl md:text-4xl">
                             {desc.split(".")[0]}
                           </h3>
-                          <span className={`mt-5 block h-[3px] w-12 rounded-full ${a.rule}`} />
-                          <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/70 md:text-base">
+                          <span className={`mt-4 block h-[3px] w-12 rounded-full sm:mt-5 ${a.rule}`} />
+                          <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/70 sm:mt-5 md:text-base">
                             {desc}
                           </p>
                         </div>
