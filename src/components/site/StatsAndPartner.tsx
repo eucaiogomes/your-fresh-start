@@ -223,7 +223,7 @@ export const StatsAndPartner = () => (
       <div className="relative mt-16 reveal">
         <div className="grid items-stretch gap-0 overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-20px_hsl(222_90%_3%/0.7)] lg:grid-cols-[1.15fr_1fr]">
           {/* ESQUERDA — Depoimento (claro) */}
-          <div className="relative overflow-hidden bg-white/95 p-10 backdrop-blur-xl lg:p-14">
+          <div className="relative overflow-hidden bg-white/95 p-6 backdrop-blur-xl sm:p-10 lg:p-14">
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">
