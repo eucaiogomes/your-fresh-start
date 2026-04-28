@@ -551,7 +551,7 @@ const ConsultorCta = () => {
 
       {/* Card laranja com gradiente */}
       <div
-        className="relative mt-12 overflow-hidden rounded-[2rem] p-8 shadow-[0_40px_80px_-20px_hsl(22_95%_25%/0.6)] md:p-12"
+        className="relative mt-12 overflow-hidden rounded-[1.5rem] p-6 shadow-[0_40px_80px_-20px_hsl(22_95%_25%/0.6)] sm:rounded-[2rem] sm:p-8 md:p-12"
         style={{
           backgroundImage:
             "linear-gradient(135deg, hsl(22 95% 55%) 0%, hsl(30 100% 62%) 55%, hsl(22 95% 48%) 100%)",
