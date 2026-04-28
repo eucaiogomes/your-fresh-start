@@ -6,7 +6,7 @@ const clientLogos = ["SESI SENAI", "Sicredi", "Unimed", "GERDAU", "aché", "Alga
 export const Hero = () => {
   return (
     <section
-      className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_18%)_0%,_hsl(222_85%_10%)_55%,_hsl(222_90%_7%)_100%)] text-white pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32"
+      className="relative overflow-hidden bg-[hsl(222_85%_8%)] text-white pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32"
     >
       {/* Átomo Lector centralizado atrás do título — estático, respiração sutil */}
       <div
