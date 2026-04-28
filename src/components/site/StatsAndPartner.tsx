@@ -281,7 +281,7 @@ export const StatsAndPartner = () => (
               }}
             />
 
-            <div className="relative z-10 flex h-full flex-col justify-between p-10 lg:p-12">
+            <div className="relative z-10 flex h-full flex-col justify-between p-6 sm:p-10 lg:p-12">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-accent-glow ring-1 ring-white/15 backdrop-blur">
                   <ShieldCheck className="h-3.5 w-3.5" /> Parceria estratégica
