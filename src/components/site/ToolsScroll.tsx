@@ -509,7 +509,7 @@ export const ToolsScroll = () => {
       id="ferramentas"
       ref={sectionRef}
       className="relative bg-[hsl(222_85%_8%)] text-white"
-      style={{ height: `calc(100svh + ${(totalSlides - 1) * slideHeightVh}svh)` }}
+      style={{ height: `calc(max(100svh, 780px) + ${(totalSlides - 1) * slideHeightVh}svh)` }}
     >
       {/* Sticky stage — usa svh para evitar saltos com a barra de URL no mobile */}
       <div className="sticky top-0 flex h-[100svh] min-h-[780px] w-full items-center overflow-hidden sm:min-h-0">
