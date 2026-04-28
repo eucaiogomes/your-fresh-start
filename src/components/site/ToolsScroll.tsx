@@ -579,7 +579,7 @@ export const ToolsScroll = () => {
                         </span>
                         <span className="pr-2 text-sm font-semibold text-white">{tool.tag}</span>
                       </div>
-                      <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
+                      <h2 className="mt-6 font-display text-2xl font-extrabold leading-[1.1] tracking-tight sm:text-3xl md:text-5xl">
                         {tool.title}
                       </h2>
                       <span className="mt-5 block h-[3px] w-14 rounded-full bg-accent" />
