@@ -509,10 +509,10 @@ export const ToolsScroll = () => {
       id="ferramentas"
       ref={sectionRef}
       className="relative bg-[hsl(222_85%_8%)] text-white"
-      style={{ height: `calc(100vh + ${(totalSlides - 1) * slideHeightVh}vh)` }}
+      style={{ height: `calc(100svh + ${(totalSlides - 1) * slideHeightVh}svh)` }}
     >
-      {/* Sticky stage */}
-      <div className="sticky top-0 flex h-screen w-full items-center overflow-hidden">
+      {/* Sticky stage — usa svh para evitar saltos com a barra de URL no mobile */}
+      <div className="sticky top-0 flex h-[100svh] w-full items-center overflow-hidden">
         {/* Atom background — rolls with scroll (direct DOM updates) */}
         <LectorAtom ref={atomRef} />
 

@@ -86,13 +86,14 @@
 
 @layer base {
   * { @apply border-border; }
-  html { scroll-behavior: smooth; overflow-x: hidden; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     font-feature-settings: 'cv11', 'ss01', 'ss03';
-    overflow-x: hidden;
   }
+  /* Evita scroll horizontal sem quebrar position: sticky */
+  #root { overflow-x: clip; }
   h1, h2, h3, h4 {
     font-family: 'Sora', 'Inter', sans-serif;
     letter-spacing: -0.02em;
