@@ -470,7 +470,7 @@ const SolutionsParallax = () => {
                           <span className={`block text-[11px] font-bold uppercase tracking-[0.22em] ${accent === "orange" ? "text-accent" : "text-primary-glow"}`}>
                             {labelTop}
                           </span>
-                          <h3 className="mt-3 font-display text-2xl font-extrabold leading-tight text-white sm:mt-4 sm:text-3xl md:text-4xl">
+                          <h3 className="mt-3 font-display text-xl font-extrabold leading-tight text-white text-balance sm:mt-4 sm:text-3xl md:text-4xl">
                             {desc.split(".")[0]}
                           </h3>
                           <span className={`mt-4 block h-[3px] w-12 rounded-full sm:mt-5 ${a.rule}`} />
