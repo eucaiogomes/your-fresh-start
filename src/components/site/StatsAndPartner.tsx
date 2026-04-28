@@ -116,7 +116,7 @@ const Counter = ({ to }: { to: number }) => {
 export const StatsAndPartner = () => (
   <section
     id="clientes"
-    className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(222_70%_14%)_0%,_hsl(222_85%_8%)_55%,_hsl(222_90%_6%)_100%)] text-white py-12 sm:py-16 lg:py-24"
+    className="relative overflow-hidden bg-[hsl(222_85%_8%)] text-white py-12 sm:py-16 lg:py-24"
   >
     {/* Átomo orbital de fundo */}
     <div
