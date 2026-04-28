@@ -424,7 +424,7 @@ const SolutionsParallax = () => {
           onMouseLeave={() => setPaused(false)}
         >
           {/* viewport */}
-          <div className="relative h-[460px] overflow-hidden rounded-[32px] md:h-[500px]">
+          <div className="relative h-[520px] overflow-hidden rounded-[24px] sm:h-[460px] sm:rounded-[32px] md:h-[500px]">
             <div
               className="flex h-full w-full will-change-transform"
               style={{
