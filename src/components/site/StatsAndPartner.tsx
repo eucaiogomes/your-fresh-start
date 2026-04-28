@@ -537,7 +537,7 @@ const ConsultorCta = () => {
         <span className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70 ring-1 ring-white/10 backdrop-blur">
           Fale com um consultor
         </span>
-        <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl text-balance">
+        <h2 className="mt-6 font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl text-balance">
           Garanta o fluxo de{" "}
           <span className="bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">
             informações
