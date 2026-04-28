@@ -437,7 +437,7 @@ const SolutionsParallax = () => {
                 const labelTop = title.replace("\n", " ").toUpperCase();
                 return (
                   <div key={title} className="h-full w-full shrink-0 basis-full">
-                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
+                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
                       {/* glow border top */}
                       <div
                         aria-hidden
