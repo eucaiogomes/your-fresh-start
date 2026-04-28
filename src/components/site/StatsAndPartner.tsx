@@ -395,7 +395,7 @@ const SolutionsParallax = () => {
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Nossas soluções</span>
             <span className="h-[2px] w-10 bg-accent" />
           </div>
-          <h2 className="mt-6 font-display text-[1.625rem] font-extrabold leading-[1.1] tracking-tight text-white text-balance break-words sm:text-4xl md:text-5xl">
+          <h2 className="mt-6 max-w-[18ch] font-display text-3xl font-extrabold leading-[1.1] tracking-tight text-white text-balance sm:max-w-none sm:text-4xl sm:leading-[1.05] md:text-5xl">
             Soluções que <span className="text-accent">impulsionam</span> resultados reais
           </h2>
           <p className="mt-7 text-base font-medium text-white/85">
@@ -424,7 +424,7 @@ const SolutionsParallax = () => {
           onMouseLeave={() => setPaused(false)}
         >
           {/* viewport */}
-          <div className="relative h-[520px] overflow-hidden rounded-[24px] sm:h-[460px] sm:rounded-[32px] md:h-[500px]">
+          <div className="relative h-[420px] overflow-hidden rounded-[24px] sm:h-[460px] sm:rounded-[32px] md:h-[500px]">
             <div
               className="flex h-full w-full will-change-transform"
               style={{
@@ -437,7 +437,7 @@ const SolutionsParallax = () => {
                 const labelTop = title.replace("\n", " ").toUpperCase();
                 return (
                   <div key={title} className="h-full w-full shrink-0 basis-full">
-                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
+                    <article className="relative h-full overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-xl shadow-[0_40px_80px_-30px_hsl(222_90%_3%/0.9)] sm:rounded-[32px] sm:p-8 md:p-12">
                       {/* glow border top */}
                       <div
                         aria-hidden
@@ -457,10 +457,10 @@ const SolutionsParallax = () => {
                             className={`absolute inset-0 -m-4 rounded-full ${a.halo} blur-2xl`}
                           />
                           {/* anel externo escuro */}
-                          <div className="relative grid h-24 w-24 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
+                          <div className="relative grid h-20 w-20 place-items-center rounded-full bg-[hsl(222_60%_10%)] ring-1 ring-white/10 sm:h-32 sm:w-32">
                             {/* círculo laranja sólido */}
-                            <div className={`grid h-[72px] w-[72px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
-                              <Icon className="h-9 w-9 text-white sm:h-11 sm:w-11" />
+                            <div className={`grid h-[60px] w-[60px] place-items-center rounded-full sm:h-24 sm:w-24 ${a.iconWrap}`}>
+                              <Icon className="h-7 w-7 text-white sm:h-11 sm:w-11" />
                             </div>
                           </div>
                         </div>
@@ -470,7 +470,7 @@ const SolutionsParallax = () => {
                           <span className={`block text-[11px] font-bold uppercase tracking-[0.22em] ${accent === "orange" ? "text-accent" : "text-primary-glow"}`}>
                             {labelTop}
                           </span>
-                          <h3 className="mt-3 font-display text-2xl font-extrabold leading-tight text-white sm:mt-4 sm:text-3xl md:text-4xl">
+                          <h3 className="mt-3 font-display text-xl font-extrabold leading-tight text-white text-balance sm:mt-4 sm:text-3xl md:text-4xl">
                             {desc.split(".")[0]}
                           </h3>
                           <span className={`mt-4 block h-[3px] w-12 rounded-full sm:mt-5 ${a.rule}`} />
