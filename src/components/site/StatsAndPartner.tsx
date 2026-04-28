@@ -586,7 +586,7 @@ const ConsultorCta = () => {
               <MessageSquareText className="h-7 w-7" strokeWidth={2.4} />
             </div>
 
-            <h3 className="mt-7 font-display text-3xl font-extrabold leading-tight text-white md:text-4xl">
+            <h3 className="mt-7 font-display text-2xl font-extrabold leading-tight text-white sm:text-3xl md:text-4xl">
               Converse agora com um{" "}
               <span className="text-primary">consultor</span> e saiba mais!
             </h3>
